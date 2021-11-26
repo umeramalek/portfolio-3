@@ -1,0 +1,30 @@
+.contactPage {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    background-color: rgb(107, 107, 107);
+    text-align: start;
+}
+
+.contactForm input {
+    width: 95%;
+}
+
+.messageFormText {
+    width: 95%;
+}
+
+@media screen and (max-width: 600px) {
+    .formContainer {
+        width: 70vw;
+    }
+}

@@ -1,5 +1,5 @@
 import React, { useState, setState } from 'react';
-import '../styles/contact.css';
+import './style.css'
 
 
 function Contact () {
