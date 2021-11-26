@@ -1,0 +1,17 @@
+.About {
+    text-align: center;
+    font-size: x-large;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.portrait {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutMe {
+        width: 90vw;
+    }
+}
