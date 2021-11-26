@@ -1,5 +1,6 @@
 import React from 'react';
 import me from './me.jpg';
+import './style.css'
 
 export default function About() {
   const imageStyle = {
