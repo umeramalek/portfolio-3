@@ -1,5 +1,5 @@
 import React from 'react';
-import me from '.../images/me.jpg';
+import me from './me.jpg';
 
 export default function About() {
   const imageStyle = {
@@ -8,7 +8,7 @@ export default function About() {
   };
 
   return (
-    <div >
+    <div href="/About">
       <div >
         <img src={me} alt='me' style={imageStyle}></img>
       </div>

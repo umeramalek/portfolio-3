@@ -4,15 +4,15 @@ import Navbar from './components/Navigation/index'
 import './App.css';
 
 
+
 function App() {
     return (
         <div className='App'>
-            <Navbar />
-
-            <img src={me}  alt="my-image"/>
+          <Navbar />
   
 
         </div>
+        
     )
 }
 
