@@ -1,35 +1,36 @@
-import React, { Component } from 'react';
-import { menuBars } from "./menuBars"
+import React, { useState } from 'react';
+import { menuBars } from "./menuBars";
+
 import './style.css'
 
-class Navbar extends Component {
-    state = { clicked: false }
+ const Navbar = (props) => {
+    // state = { clicked: false }
+    const [state, setState] = useState('');
+    console.log(props)
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
+    const handleClick = () => {
+        setState({ clicked: !state.clicked })
     }
-
-    render() {
         return(
             <nav className="navbar">
-                <h1 className="navbar-logo">Umera Malek<i className="fab fa-react"></i></h1>
-                <div className="menu-items" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                <h1 className="navbar-logo" onClick={()=> props.handleChange('About')}>Umera Malek <i className="fab fa-react"></i></h1>
+                <div className="menu-items" onClick={handleClick}>
+                    <i className={state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul className={this.state.clicked ? 'menu-nav active' : 'menu-nav'}>
+                <ul className={state.clicked ? 'menu-nav active' : 'menu-nav'}>
                     {menuBars.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.name} href={item.url}>
+                                <span onClick={() => props.handleChange(item.title)} className={item.name}>
                                 {item.title}
-                                </a>
+                                </span>
                             </li>
                         )
                     })}
                 </ul>
             </nav>
         )
-    }
+    
 }
 
 export default Navbar

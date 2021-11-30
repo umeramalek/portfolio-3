@@ -15,22 +15,27 @@ function App() {
   const renderChange = () => {
     switch (currentPage) {
       default: return <About />;
-      case 'projects': return <Projects />;
-      case 'contact': return <Contact />;
-      case 'about': return <About />;
+      case 'Projects': return <Projects />;
+      case 'Contact': return <Contact />;
+      // case 'Resume': return <Resume />;
+      case 'About': return <About />;
     }
   }
 
-  const handleChange = (page) => {
+ const handleChange = (page) => {
     setPage(page);
   }
   
   return (
-    <pageChange.Provider value={{ currentPage, handleChange }}>
-        <Navbar />
-        {renderChange()}
+    <div>
+    {/* // <pageChange.Provider value={{ currentPage, handleChange }}> */}
+        <Navbar handleChange={handleChange} />
+        <div>
+          {renderChange()}
+        </div>
         <Footer />
-    </pageChange.Provider>
+    </div>
+    // </pageChange.Provider>
       
 
   );
