@@ -1,5 +1,6 @@
 import React from 'react';
 import cv from './umera-resume.pdf';
+import './style.css';
 
 export default function Resume() {
   const skills = [
