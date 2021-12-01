@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, createContext } from 'react';
+import Home from './components/Home/index';
 import Navbar from './components/Navigation/index';
 import About from './components/About';
 import Projects from './components/Project';
@@ -10,15 +11,16 @@ export const pageChange = createContext();
 
 function App() {
 
-  const [currentPage, setPage] = useState('About');
+  const [currentPage, setPage] = useState('Home');
 
   const renderChange = () => {
     switch (currentPage) {
-      default: return <About />;
+      default: return <Home />;
       case 'Projects': return <Projects />;
       case 'Contact': return <Contact />;
       // case 'Resume': return <Resume />;
       case 'About': return <About />;
+      case 'Home': return <Home />;
     }
   }
 

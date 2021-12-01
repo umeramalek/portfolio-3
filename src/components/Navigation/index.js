@@ -13,7 +13,7 @@ import './style.css'
     }
         return(
             <nav className="navbar">
-                <h1 className="navbar-logo" onClick={()=> props.handleChange('About')}>Umera Malek <i className="fab fa-react"></i></h1>
+                <h1 className="navbar-logo" onClick={()=> props.handleChange('Home')}>Umera Malek <i className="fab fa-react"></i></h1>
                 <div className="menu-items" onClick={handleClick}>
                     <i className={state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
