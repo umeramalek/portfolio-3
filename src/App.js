@@ -33,8 +33,11 @@ function App() {
         <div>
           {renderChange()}
         </div>
-        <Footer />
+        <div>
+          <Footer />
+        </div>
     </div>
+
     // </pageChange.Provider>
       
 

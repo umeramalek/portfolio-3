@@ -4,15 +4,21 @@ import './style.css';
 
 function Footer () {
     return (
-    <div className='footer'>
-        <h3>Links</h3>
-        <div className='footerLinks'>
-            <a href='https://github.com/umeramalek' className="fab fa-github" rel='noreferrer' target="_blank">Github</a>
-            <a href='https://www.linkedin.com/in/umeramalek/' className="fab fa-linkedin" rel='noreferrer' target="_blank">LinkedIn</a>
-            <a href='https://medium.com/@umeramalek796' className="fab fa-medium" rel='noreferrer' target="_blank">Medium</a>
-            
+    <footer className="footer text-center" > 
+        <div className="container">
+            <div className="row">
+                <div className=" text-center text-black ">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <div className='footerLinks'>
+                        <a className="btn btn-outline-dark btn-social mx-1" href="mailto:umeramalek796@gmail.com!" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                        <a className="btn btn-outline-dark btn-social mx-1" href="https://www.linkedin.com/in/umeramalek/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a className="btn btn-outline-dark btn-social mx-1" href="https://github.com/umeramalek" target="_blank"><i class="fab fa-github"></i></a>
+                        <a className="btn btn-outline-dark btn-social mx-1" href="https://medium.com/@umeramalek796" target="_blank"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
     )
 }
 
