@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 export const pageChange = createContext();
 
@@ -18,7 +19,7 @@ function App() {
       default: return <Home />;
       case 'Projects': return <Projects />;
       case 'Contact': return <Contact />;
-      // case 'Resume': return <Resume />;
+      case 'Resume': return <Resume />;
       case 'About': return <About />;
       case 'Home': return <Home />;
     }
