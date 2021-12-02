@@ -1,6 +1,9 @@
 # umeramalek-portfolio
 This is an updated react portfolio that tells a little about me and showcases my projects all in one place. There are also ways to reach me on the website. I have also added my resume to the portfolio for the ease of recruiters. 
 
+### Screenshot
+
+
 
 ### Technologies Used
 [HTML]
@@ -13,7 +16,7 @@ This is an updated react portfolio that tells a little about me and showcases my
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](#) https://umeramalek.github.io/
 * [See Github Site](#) https://github.com/umeramalek/umeramalek.github.io 
 
 
