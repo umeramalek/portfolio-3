@@ -1,7 +1,9 @@
 # umeramalek-portfolio
 This is an updated react portfolio that tells a little about me and showcases my projects all in one place. There are also ways to reach me on the website. I have also added my resume to the portfolio for the ease of recruiters. 
 
-### Screenshot
+### Mock-up
+
+![](src/images/react-port.gif)
 
 
 
