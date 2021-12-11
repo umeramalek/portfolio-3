@@ -18,7 +18,7 @@ This is an updated react portfolio that tells a little about me and showcases my
 
 ## Deployed Link
 
-* [See Live Site](#) https://umeramalek.github.io/
+* [See Live Site](#)  https://umeramalek.github.io/react-port/
 * [See Github Site](#) https://github.com/umeramalek/umeramalek.github.io 
 
 
